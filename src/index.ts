@@ -9,7 +9,7 @@ import { getSchema } from "./getSchema";
 import { generateSqlMegatable } from "./generateSqlMegatable";
 
 const DATASET_PATH = "./dataset";
-const MEGATABLE_NAME = "Specifications";
+const MEGATABLE_NAME = "Specs";
 
 console.log(chalk.yellow("Conectando a la base de datos..."));
 
@@ -32,8 +32,8 @@ mysql
   });
 
 async function main(db: Connection) {
-  const data = await readDataset(DATASET_PATH);
-  const scheme = getSchema(data);
+  const elements = await readDataset(DATASET_PATH);
+  const scheme = getSchema(elements);
 
   console.log(
     chalk.yellow("Generating query for " + MEGATABLE_NAME + " table..."),
