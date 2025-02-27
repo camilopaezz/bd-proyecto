@@ -1,4 +1,3 @@
-import fs from "fs/promises";
 import mysql, { Connection } from "mysql2/promise";
 import dotenv from "dotenv";
 import chalk from "chalk";

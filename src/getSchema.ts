@@ -1,6 +1,12 @@
 import { DBType, guessType } from "./guessType";
 import { Elements } from "./readDataset";
 
+const IGNORED_FIELDS: {
+  [key: string]: boolean;
+} = {
+  price: true,
+  name: true,
+};
 export type Schema = Map<string, DBType>;
 
 export function getSchema(elements: Elements) {
@@ -20,7 +26,7 @@ export function getSchema(elements: Elements) {
     for (const [propertyKey, propertyValue] of Object.entries(
       completeElement,
     )) {
-      if (!schema.has(propertyKey)) {
+      if (!schema.has(propertyKey) && !IGNORED_FIELDS[propertyKey]) {
         schema.set(propertyKey, guessType(propertyValue));
       }
     }
