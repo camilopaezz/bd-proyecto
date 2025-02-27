@@ -6,8 +6,8 @@ import chalk from "chalk";
 dotenv.config();
 
 import { readDataset } from "./readDataset";
-import { getSchema, Schema } from "./getSchema";
-import { DBType } from "./guessType";
+import { getSchema } from "./getSchema";
+import { generateSqlMegatable } from "./generateSqlMegatable";
 
 const DATASET_PATH = "./dataset";
 const MEGATABLE_NAME = "Specifications";
@@ -41,42 +41,11 @@ async function main(db: Connection) {
   );
   const query = generateSqlMegatable(scheme, MEGATABLE_NAME);
 
-  const x = await db.query(query);
-  console.log(query);
+  console.log(chalk.magenta(query));
+  await db.query(query);
+  console.log(chalk.green(`Table ${MEGATABLE_NAME} successfully created`));
 
   console.log(chalk.yellow("Desconectando de la base de datos"));
   await db.end();
   console.log(chalk.green("Se desconecto exitosamente"));
-}
-
-function toMysqlType(type: DBType) {
-  switch (type) {
-    case "string":
-      return "varchar(100)";
-    case "integer":
-      return "int";
-    case "float":
-      return "float(2)";
-    case "boolean":
-      return "boolean";
-    case "array":
-      return "varchar(100)";
-
-    default:
-      break;
-  }
-}
-
-function generateSqlMegatable(schema: Schema, name: string) {
-  const fields: string[] = [];
-
-  for (const [key, type] of schema) {
-    fields.push(`${key} ${toMysqlType(type)}`);
-  }
-
-  const singularName = name[0].toLowerCase() + name.slice(1, -1);
-
-  const query = `create table ${name} (${singularName + "_id"} int auto_increment, ${fields.join(", ")}, primary key (${singularName + "_id"}));`;
-
-  return query;
 }
