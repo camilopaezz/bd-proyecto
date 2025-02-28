@@ -1,5 +1,5 @@
 create table Clients (
-  client_id int auto_increment,
+  client_id int auto_increment primary key,
   name varchar(50) not null,
   phone varchar(10) not null,
   email varchar(20) not null,
