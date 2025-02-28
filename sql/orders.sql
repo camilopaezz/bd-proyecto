@@ -4,10 +4,10 @@ create table Orders (
     client_id int not null,
     total float(2) not null, 
     quantity int unsigned not null,
-    created_at datetime default CURRENT_TIMESTAMP 
+    created_at datetime default CURRENT_TIMESTAMP,
     product_id int not null,
-    foreign key (client_id) references Clients (client_id)
-    foreign key (product_id) references Products (product_id)
+    foreign key (client_id) references Clients (client_id),
+    foreign key (product_id) references Products (product_id),
 );
 
 -- -- Procedure for setting the total
