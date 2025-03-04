@@ -1,9 +1,15 @@
 import { DBType, guessType } from "./guessType";
 import { Elements } from "./readDataset";
 
-const IGNORED_FIELDS: {
+export const IGNORED_FIELDS: {
   [key: string]: boolean;
 } = {
+  airflow: true,
+  noise_level: true,
+  channel_wattage: true,
+  form_factor: true,
+  mode: true,
+  // to fix ^
   price: true,
   name: true,
 };
@@ -24,7 +30,7 @@ export function getSchema(elements: Elements) {
     }
 
     for (const [propertyKey, propertyValue] of Object.entries(
-      completeElement,
+      completeElement
     )) {
       if (!schema.has(propertyKey) && !IGNORED_FIELDS[propertyKey]) {
         schema.set(propertyKey, guessType(propertyValue));

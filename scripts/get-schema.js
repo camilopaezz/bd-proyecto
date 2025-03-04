@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const path = require("path");
 const fs = require("fs/promises");
+
 const { readDataset } = require("../dist/readDataset");
 const { getSchema } = require("../dist/getSchema");
 
@@ -20,7 +21,7 @@ const PWD = process.cwd();
       JSON.stringify(Object.fromEntries(schema.entries())),
       {
         encoding: "utf8",
-      },
+      }
     );
   } catch (e) {
     console.log(e);

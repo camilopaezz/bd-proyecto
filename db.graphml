@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 3.0-EAP4-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:yca="http://www.yworks.com/xml/yfiles-compat-arrows/1.0" xmlns:ycns="http://www.yworks.com/xml/yfiles-compat-node-styles/1.0" xmlns:yjs2="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:Vue2jsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:Vue3jsNodeStyle="http://www.yworks.com/demos/yfiles-vue-node-style/3.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:yx="http://www.yworks.com/xml/yfiles-common/4.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/3.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<yjs:Color x:Key="1" value="#FF607D8B"/>
+			<yjs:Color x:Key="2" value="#FFA3F1BB"/>
+			<yjs:Color x:Key="3" value="#FFA6A6A6"/>
+			<yx:SmartEdgeLabelModel x:Key="4"/>
+			<yjs:Font x:Key="5" fontSize="8" fontFamily="'Arial'" lineSpacing="0.2"/>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","origin":"yed-live","theme":{"name":"dark","version":"1.0.0"},"bridge-style":"ARC_SCALED"}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="123.5" Y="1343.5" Width="186" Height="214"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Audit" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[record_id: int]]></sys:String>
+									<sys:String><![CDATA[created_at: timestamp]]></sys:String>
+									<sys:String><![CDATA[audit_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[table_name: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[action: varchar(10)]]></sys:String>
+									<sys:String><![CDATA[description: varchar(255)]]></sys:String>
+									<sys:String><![CDATA[user_id: varchar(50)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+		</node>
+		<node id="n1">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="43.75" Y="1053" Width="184" Height="134"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Category" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[category_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[description: varchar(100)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-144.75" Y="1553" Width="164" Height="182"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Clients" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[client_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[name: varchar(50)]]></sys:String>
+									<sys:String><![CDATA[phone: varchar(10)]]></sys:String>
+									<sys:String><![CDATA[email: varchar(20)]]></sys:String>
+									<sys:String><![CDATA[address: varchar(100)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-70.5" Y="2141" Width="173" Height="214"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Orders" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[client_id: int]]></sys:String>
+									<sys:String><![CDATA[total: float]]></sys:String>
+									<sys:String><![CDATA[quantity: int unsigned]]></sys:String>
+									<sys:String><![CDATA[created_at: datetime]]></sys:String>
+									<sys:String><![CDATA[product_id: int]]></sys:String>
+									<sys:String><![CDATA[order_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[p_order_id: varchar(36)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.25,0"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.75,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n4">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-137.75" Y="1271" Width="150" Height="198"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Products" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[stock: int unsigned]]></sys:String>
+									<sys:String><![CDATA[price: float]]></sys:String>
+									<sys:String><![CDATA[category_id: int]]></sys:String>
+									<sys:String><![CDATA[spec_id: int]]></sys:String>
+									<sys:String><![CDATA[product_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[name: varchar(200)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.25,0"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.75,0"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-453.5" Y="1039" Width="243" Height="1316"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Specs" attributesOpen="true" operationsOpen="true">
+							<uml:UMLClassModel.attributes>
+								<x:Array>
+									<sys:String><![CDATA[form_factor: float]]></sys:String>
+									<sys:String><![CDATA[size: int]]></sys:String>
+									<sys:String><![CDATA[airflow: float]]></sys:String>
+									<sys:String><![CDATA[noise_level: float]]></sys:String>
+									<sys:String><![CDATA[psu: int]]></sys:String>
+									<sys:String><![CDATA[external_525_bays: int]]></sys:String>
+									<sys:String><![CDATA[internal_35_bays: int]]></sys:String>
+									<sys:String><![CDATA[core_count: int]]></sys:String>
+									<sys:String><![CDATA[core_clock: float]]></sys:String>
+									<sys:String><![CDATA[boost_clock: float]]></sys:String>
+									<sys:String><![CDATA[tdp: int]]></sys:String>
+									<sys:String><![CDATA[capacity: int]]></sys:String>
+									<sys:String><![CDATA[price_per_gb: float]]></sys:String>
+									<sys:String><![CDATA[cache: int]]></sys:String>
+									<sys:String><![CDATA[first_word_latency: int]]></sys:String>
+									<sys:String><![CDATA[cas_latency: int]]></sys:String>
+									<sys:String><![CDATA[screen_size: int]]></sys:String>
+									<sys:String><![CDATA[refresh_rate: int]]></sys:String>
+									<sys:String><![CDATA[response_time: int]]></sys:String>
+									<sys:String><![CDATA[max_memory: int]]></sys:String>
+									<sys:String><![CDATA[memory_slots: int]]></sys:String>
+									<sys:String><![CDATA[max_dpi: int]]></sys:String>
+									<sys:String><![CDATA[bd: int]]></sys:String>
+									<sys:String><![CDATA[dvd: int]]></sys:String>
+									<sys:String><![CDATA[cd: int]]></sys:String>
+									<sys:String><![CDATA[mode: int]]></sys:String>
+									<sys:String><![CDATA[wattage: int]]></sys:String>
+									<sys:String><![CDATA[channels: float]]></sys:String>
+									<sys:String><![CDATA[digital_audio: int]]></sys:String>
+									<sys:String><![CDATA[snr: int]]></sys:String>
+									<sys:String><![CDATA[sample_rate: int]]></sys:String>
+									<sys:String><![CDATA[configuration: int]]></sys:String>
+									<sys:String><![CDATA[amount: float]]></sys:String>
+									<sys:String><![CDATA[capacity_w: int]]></sys:String>
+									<sys:String><![CDATA[capacity_va: int]]></sys:String>
+									<sys:String><![CDATA[memory: int]]></sys:String>
+									<sys:String><![CDATA[length: int]]></sys:String>
+									<sys:String><![CDATA[fov: int]]></sys:String>
+									<sys:String><![CDATA[spec_id: int]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array>
+									<sys:String><![CDATA[type: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[color: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[rpm: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[pwm: tinyint(1)]]></sys:String>
+									<sys:String><![CDATA[side_panel: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[graphics: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[smt: tinyint(1)]]></sys:String>
+									<sys:String><![CDATA[interface: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[frequency_response: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[microphone: tinyint(1)]]></sys:String>
+									<sys:String><![CDATA[wireless: tinyint(1)]]></sys:String>
+									<sys:String><![CDATA[enclosure_type: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[style: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[switches: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[backlit: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[tenkeyless: tinyint(1)]]></sys:String>
+									<sys:String><![CDATA[connection_type: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[speed: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[modules: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[resolution: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[panel_type: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[aspect_ratio: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[socket: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[tracking_method: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[hand_orientation: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[bd_write: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[dvd_write: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[cd_write: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[efficiency: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[modular: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[chipset: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[resolutions: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[connection: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[focus_type: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[os: varchar(100)]]></sys:String>
+									<sys:String><![CDATA[protocol: varchar(100)]]></sys:String>
+								</x:Array>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n3" target="n2" sourceport="p0" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Text="client_id">
+						<y:Label.LayoutParameter>
+							<yx:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 4}" Distance="-6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:LabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" wrapping="WRAP_WORD" backgroundStroke="WHITE" font="{y:GraphMLReference 5}" autoFlip="false" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-62.75,2060.1875"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="#FFA6A6A6" smoothingLength="20">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" lengthScale="0.5" widthScale="1.5" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" type="NONE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e1" source="n3" target="n4" sourceport="p1" targetport="p2">
+			<data key="d11">
+				<x:List>
+					<y:Label Text="product_id">
+						<y:Label.LayoutParameter>
+							<yx:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 4}" Distance="-6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:LabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" wrapping="WRAP_WORD" backgroundStroke="WHITE" font="{y:GraphMLReference 5}" autoFlip="false" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="59.25,1523.984375"/>
+					<y:Bend Location="-62.75,1523.984375"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="#FFA6A6A6" smoothingLength="20">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" lengthScale="0.5" widthScale="1.5" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" type="NONE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e2" source="n4" target="n1" sourceport="p1" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Text="category_id">
+						<y:Label.LayoutParameter>
+							<yx:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 4}" Distance="-6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:LabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" wrapping="WRAP_WORD" backgroundStroke="WHITE" font="{y:GraphMLReference 5}" autoFlip="false" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-25.25,1228.75"/>
+					<y:Bend Location="135.75,1228.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="#FFA6A6A6" smoothingLength="20">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" lengthScale="0.5" widthScale="1.5" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" type="NONE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e3" source="n4" target="n5" sourceport="p0" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Text="spec_id">
+						<y:Label.LayoutParameter>
+							<yx:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 4}" Distance="-6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:LabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" wrapping="WRAP_WORD" backgroundStroke="WHITE" font="{y:GraphMLReference 5}" autoFlip="false" textSize="8"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-100.25,1120.125"/>
+					<y:Bend Location="-168,1120.125"/>
+					<y:Bend Location="-168,2432.3125"/>
+					<y:Bend Location="-332,2432.3125"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="#FFA6A6A6" smoothingLength="20">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" lengthScale="0.5" widthScale="1.5" type="TRIANGLE"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow stroke="#FFA6A6A6" fill="{y:GraphMLReference 3}" type="NONE"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+	</graph>
+</graphml>
