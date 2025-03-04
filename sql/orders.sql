@@ -23,4 +23,40 @@ BEGIN
     END IF;
 END $$
 
+-- Function to check if stock is available
+CREATE FUNCTION fn_is_stock_available(p_product_id INT, p_quantity INT) 
+RETURNS BOOLEAN
+READS SQL DATA
+BEGIN
+    DECLARE available_stock INT;
+    
+    SELECT stock INTO available_stock 
+    FROM Products 
+    WHERE product_id = p_product_id;
+    
+    RETURN available_stock >= p_quantity;
+END $$
+
+-- Trigger to prevent orders with insufficient stock
+CREATE TRIGGER tr_check_stock_before_order 
+BEFORE INSERT ON Orders
+FOR EACH ROW
+BEGIN
+    IF NOT fn_is_stock_available(NEW.product_id, NEW.quantity) THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Insufficient stock available for this product';
+    END IF;
+END $$
+
+-- Trigger to update stock after order
+CREATE TRIGGER tr_update_stock_after_order
+AFTER INSERT ON Orders
+FOR EACH ROW
+BEGIN
+    UPDATE Products
+    SET stock = stock - NEW.quantity
+    WHERE product_id = NEW.product_id;
+END $$
+
+
 DELIMITER ;
