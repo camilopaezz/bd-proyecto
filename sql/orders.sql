@@ -8,7 +8,7 @@ create table
         created_at datetime default CURRENT_TIMESTAMP,
         product_id int not null,
         foreign key (client_id) references Clients (client_id),
-        foreign key (product_id) references Products (product_id),
+        foreign key (product_id) references Products (product_id)
     );
 
 DELIMITER $$

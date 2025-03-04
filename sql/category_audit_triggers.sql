@@ -1,5 +1,11 @@
 -- Audit triggers for Category table
 
+GRANT SYSTEM_VARIABLES_ADMIN ON pcparts.* TO 'root'@'%';
+FLUSH PRIVILEGES;
+
+SET GLOBAL log_bin_trust_function_creators = 1;
+
+
 DELIMITER $$
 
 -- Trigger for INSERT operations

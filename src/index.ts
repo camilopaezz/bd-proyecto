@@ -51,10 +51,10 @@ async function main(db: Connection) {
   // 02. Create categories
   const [categoryQueries, categoryDictIds] = generateSqlCategory(elements);
 
-  for (const q of categoryQueries) {
-    console.log(chalk.magenta(q));
-    await db.query(q);
-  }
+  // for (const q of categoryQueries) {
+  //   console.log(chalk.magenta(q));
+  //   await db.query(q);
+  // }
 
   // Insert Products ans specs
   for (const [category_name, elementBach] of Object.entries(elements)) {

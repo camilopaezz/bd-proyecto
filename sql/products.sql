@@ -3,7 +3,7 @@ create table
     Products (
         product_id int auto_increment primary key,
         stock int unsigned default 0 null,
-        name varchar(100) not null,
+        name varchar(200) not null,
         price float(2) not null,
         category_id int not null,
         spec_id int not null,

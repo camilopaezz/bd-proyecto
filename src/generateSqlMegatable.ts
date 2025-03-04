@@ -4,7 +4,7 @@ import { DBType } from "./guessType";
 function toMysqlType(type: DBType) {
   switch (type) {
     case "string":
-      return "varchar(200)";
+      return "varchar(100)";
     case "integer":
       return "int";
     case "float":
@@ -23,7 +23,11 @@ export function generateSqlMegatable(schema: Schema, name: string) {
   const fields: string[] = [];
 
   for (const [key, type] of schema) {
-    fields.push(`${key} ${toMysqlType(type)}`);
+    if (key === "name") {
+      fields.push(`${key} 'varchar(150)'`);
+    } else {
+      fields.push(`${key} ${toMysqlType(type)}`);
+    }
   }
 
   const singularName = name[0].toLowerCase() + name.slice(1, -1);
