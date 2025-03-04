@@ -3,9 +3,11 @@ create table
     Category (
         category_id int auto_increment primary key,
         description varchar(100) not null
-    ) DELIMITER / /
-    -- Trigger for INSERT operations
-    CREATE TRIGGER category_insert_audit AFTER INSERT ON Category FOR EACH ROW BEGIN
+    );
+
+DELIMITER / /
+-- Trigger for INSERT operations
+CREATE TRIGGER category_insert_audit AFTER INSERT ON Category FOR EACH ROW BEGIN
 INSERT INTO
     Audit (table_name, action, record_id, description)
 VALUES

@@ -5,9 +5,11 @@ create table
     phone varchar(10) not null,
     email varchar(20) not null,
     address varchar(100) not null
-  ) DELIMITER / /
-  -- Trigger for INSERT operations
-  CREATE TRIGGER clients_insert_audit AFTER INSERT ON Clients FOR EACH ROW BEGIN
+  );
+
+DELIMITER / /
+-- Trigger for INSERT operations
+CREATE TRIGGER clients_insert_audit AFTER INSERT ON Clients FOR EACH ROW BEGIN
 INSERT INTO
   Audit (table_name, action, record_id, description)
 VALUES
