@@ -3,7 +3,7 @@ create table
         order_id int auto_increment primary key,
         p_order_id varchar(36) null,
         client_id int not null,
-        total float(2) not null,
+        total float(2),
         quantity int unsigned not null,
         created_at datetime default CURRENT_TIMESTAMP,
         product_id int not null,
@@ -46,6 +46,20 @@ BEGIN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Insufficient stock available for this product';
     END IF;
+END $$
+
+-- Trigger to calculate total based on product price and quantity
+CREATE TRIGGER tr_calculate_total_before_order
+BEFORE INSERT ON Orders
+FOR EACH ROW
+BEGIN
+    DECLARE product_price DECIMAL(10,2);
+    
+    SELECT price INTO product_price
+    FROM Products
+    WHERE product_id = NEW.product_id;
+    
+    SET NEW.total = product_price * NEW.quantity;
 END $$
 
 -- Trigger to update stock after order
